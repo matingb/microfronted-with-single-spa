@@ -24,7 +24,7 @@ const lifecycles = singleSpaAngular({
   NavigationStart,
   NgZone,
   domElementGetter: () => {
-    let htmlElement = document.getElementById("navbar")
+    let htmlElement = document.getElementById("body-angular")
     if(htmlElement == undefined ||htmlElement == null){
       htmlElement = document.createElement("div");
     }

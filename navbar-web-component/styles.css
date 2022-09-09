@@ -1,0 +1,9 @@
+:root {
+    --header-background: #444444;
+    --white: #FFF;
+}
+
+web-component {
+    --background : var(--header-background);
+    --h1Color : var(--white);
+}

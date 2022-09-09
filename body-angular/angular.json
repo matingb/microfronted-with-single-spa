@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "navbar": {
+    "body-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "dist/navbar",
+            "outputPath": "dist/body-angular",
             "index": "src/index.html",
             "main": "src/main.single-spa.ts",
             "polyfills": "src/polyfills.ts",
@@ -36,7 +36,7 @@
             "scripts": [],
             "customWebpackConfig": {
               "path": "extra-webpack.config.js",
-              "libraryName": "navbar",
+              "libraryName": "body-angular",
               "libraryTarget": "umd"
             },
             "deployUrl": "http://localhost:4200/"
@@ -79,10 +79,10 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "navbar:build:production"
+              "browserTarget": "body-angular:build:production"
             },
             "development": {
-              "browserTarget": "navbar:build:development"
+              "browserTarget": "body-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -90,7 +90,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "navbar:build"
+            "browserTarget": "body-angular:build"
           }
         },
         "test": {
@@ -114,5 +114,5 @@
       }
     }
   },
-  "defaultProject": "navbar"
+  "defaultProject": "body-angular"
 }
