@@ -23,6 +23,13 @@ const lifecycles = singleSpaAngular({
   Router,
   NavigationStart,
   NgZone,
+  domElementGetter: () => {
+    let htmlElement = document.getElementById("form-angular")
+    if(htmlElement == undefined ||htmlElement == null){
+      htmlElement = document.createElement("div");
+    }
+    return htmlElement;
+  }
 });
 
 export const bootstrap = lifecycles.bootstrap;

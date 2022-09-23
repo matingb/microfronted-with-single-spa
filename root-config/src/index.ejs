@@ -47,7 +47,8 @@
       "imports": {
         "@matias-garcia/root-config": "//localhost:9000/matias-garcia-root-config.js",
         "@matias-garcia/body-angular": "//localhost:4200/main.js",
-        "@matias-garcia/navbar-web-component": "//localhost:4300/main.js"
+        "@matias-garcia/navbar-web-component": "//localhost:4300/main.js",
+        "@matias-garcia/form-angular": "//localhost:4400/main.js"
       }
     }
   </script>
@@ -74,7 +75,10 @@
   </noscript>
   <main>
     <div id="navbar-web-component"></div>
-    <div id="body-angular"></div>
+    <div style="display: flex;">
+      <div id="body-angular" style="width: 50%; background-color: red"></div>
+      <div id="form-angular" style="width: 50%; background-color:aquamarine"></div>
+    </div>
   </main>
   <script>
     System.import('@matias-garcia/root-config');
