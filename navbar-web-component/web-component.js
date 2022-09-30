@@ -8,7 +8,6 @@ export default class WepComponent extends HTMLElement {
         this._shadowRoot.innerHTML = '';
         this._shadowRoot.appendChild(cssContent)
         this._shadowRoot.appendChild(htmlContent)
-        this._shadowRoot.querySelector('.title').innerHTML = 'Web Componet 1.0';
     }
 
     htmlToElement(html) {
