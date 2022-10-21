@@ -8,12 +8,22 @@ import { FormControl } from '@angular/forms';
 })
 export class ComunicacionComponent implements OnInit {
   
-  nombre = new FormControl('');
-  apellido = new FormControl('');
+  value = new FormControl('');
   
-  constructor() { }
+  constructor(private thisWindow: Window) {}
 
   ngOnInit(): void {
   }
 
+  guardarEnLocalStore() {
+    window.localStorage.setItem("comunicacion", this.value.value)
+  }
+
+  guardarEnWindow() {
+    //this.thisWindow['value'] = "456"
+  }
+
+  guardarEnRxjs() {
+    console.log("RXJS")
+  }
 }

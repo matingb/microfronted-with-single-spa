@@ -14,7 +14,9 @@ import { ComunicacionComponent } from './comunicacion/comunicacion.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: Window, useValue: window },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

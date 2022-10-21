@@ -16,7 +16,9 @@ import { ComunicacionComponent } from './comunicacion/comunicacion.component';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    { provide: Window, useValue: window },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

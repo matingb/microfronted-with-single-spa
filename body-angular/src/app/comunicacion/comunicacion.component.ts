@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComunicacionComponent implements OnInit {
 
-  constructor() { }
+  value: any;
+  constructor(private thisWindow: Window) { }
 
   ngOnInit(): void {
+  }
+
+  localStore() {
+    this.value = window.localStorage.getItem("comunicacion")
+  }
+
+  window() {
+    //this.value = this.thisWindow['value']
+  }
+
+  rxjs() {
+    console.log("RXJS")
   }
 
 }
