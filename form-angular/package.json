@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:single-spa:form-angular": "ng build form-angular --configuration production",
-    "serve:single-spa:form-angular": "ng s --project form-angular --disable-host-check --port 4400 --live-reload false"
+    "serve": "ng s --project form-angular --disable-host-check --port 4400 --live-reload false"
   },
   "private": true,
   "dependencies": {

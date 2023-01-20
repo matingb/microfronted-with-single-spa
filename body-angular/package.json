@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:single-spa:body-angular": "ng build body-angular --configuration production",
-    "serve:single-spa:body-angular": "ng s --project body-angular --port 4200 --live-reload false"
+    "serve": "ng s --project body-angular --port 4200 --live-reload false"
   },
   "private": true,
   "dependencies": {
