@@ -20,7 +20,7 @@ export class ComunicacionComponent implements OnInit {
   }
 
   guardarEnWindow() {
-    //this.thisWindow['value'] = "456"
+    this.thisWindow['value'] = "456"
   }
 
   guardarEnRxjs() {
